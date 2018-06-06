@@ -1,4 +1,4 @@
-Mongo Connector (Elasticsearch 5)
+Mongo Connector (Elasticsearch AWS)
 ===
 Docker images for the mongo-connector.
 
