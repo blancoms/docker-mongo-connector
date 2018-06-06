@@ -1,11 +1,11 @@
 FROM python:3.5.2
-MAINTAINER mgebundy@github
+MAINTAINER blancoms@github
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ Asia/Shanghai
 
 # Installing Mongo Connector which will connect MongoDB and Elasticsearch
-RUN pip install 'mongo-connector[elastic5]'
+RUN pip install 'mongo-connector[elastic2-aws]'
 RUN pip install pymongo==3.4.0
 
 COPY config.json /data/
