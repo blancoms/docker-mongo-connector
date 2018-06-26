@@ -5,8 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ Asia/Shanghai
 
 # Installing Mongo Connector which will connect MongoDB and Elasticsearch
-RUN pip install 'mongo-connector'
-RUN pip install 'elastic2-doc-manager-unset-fix[elastic5,aws]'
+RUN pip install 'mongo-connector[elastic2-aws]'
+#RUN pip install 'elastic2-doc-manager-unset-fix[elastic5,aws]'
 RUN pip install pymongo==3.4.0
 
 COPY config.json /data/
